@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"MonitorService/metrics"
+	"Gaze/metrics"
 )
 
 // ---- Internal state to compute deltas ----

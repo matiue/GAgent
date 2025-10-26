@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"MonitorService/api"
+	"Gaze/api"
 )
 
 func main() {
