@@ -82,3 +82,4 @@ func fmtSscanf(fields []string, vals ...*uint64) {
 		*vals[i] = v
 	}
 }
+//proc/net/snmp will be added
