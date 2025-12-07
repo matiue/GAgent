@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package grpc;
+
+// Add this line for Go
+option go_package = "github.com/matiue/GAgent/grpc/proto;proto";
+
+message Metric {
+  string name = 1;
+  double value = 2;
+  int64 timestamp = 3;
+}
+
+message MetricsBatch {
+  repeated Metric metrics = 1;
+}
+
+service MetricsService {
+  rpc PushMetrics(MetricsBatch) returns (PushResponse);
+}
+
+message PushResponse {
+  bool success = 1;
+}
